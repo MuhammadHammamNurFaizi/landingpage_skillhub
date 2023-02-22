@@ -1,4 +1,5 @@
 {
+  "homepage": "https://muhammadhammamnurfaizi.github.io/landingpage_skillhub",
   "name": "skillhub",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
+    "gh-pages": "^5.0.0",
     "prettier": "2.8.3",
     "tailwindcss": "^3.2.4"
   }
